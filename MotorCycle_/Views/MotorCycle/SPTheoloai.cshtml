@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MotorCycle_.Models.XEGANMAY>
+@{
+    ViewBag.Title = "SPTheochude";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2 style="text-align: center; color: red">Xe theo loai</h2>
+
+<div class="row">
+    @foreach (var xe in Model)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "MotorCycle", new {id = xe.MaXe})">
+                    <img src="~/images/@xe.Anhbia" alt="Alternate Text" width="80" />
+                    <div>
+                        <br />
+                        <h4 style="text-align: center"> @xe.TenXe </h4>
+                        <p></p>
+                    </div>
+                    <div class="rating">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MyDoc\\LTWeb\\MotorCycle_\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\controllers\\motorcyclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\controllers\\motorcyclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\models\\loaixe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\models\\loaixe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\sptheonpp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\sptheonpp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\sptheoloai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\sptheoloai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\nhaphanphoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\nhaphanphoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\loaixe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\loaixe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\motorcycle\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\motorcycle\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\content\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\content\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|d:\\mydoc\\ltweb\\motorcycle_\\motorcycle_\\models\\motorcycle.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{53F4FE9D-8C05-4914-92E2-F6C8D7ACC318}|MotorCycle_\\MotorCycle_.csproj|solutionrelative:motorcycle_\\models\\motorcycle.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LOAIXE.cs",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Models\\LOAIXE.cs",
+              "RelativeDocumentMoniker": "MotorCycle_\\Models\\LOAIXE.cs",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Models\\LOAIXE.cs",
+              "RelativeToolTip": "MotorCycle_\\Models\\LOAIXE.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:20:32.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Content\\css\\Site.css",
+              "RelativeDocumentMoniker": "MotorCycle_\\Content\\css\\Site.css",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Content\\css\\Site.css",
+              "RelativeToolTip": "MotorCycle_\\Content\\css\\Site.css",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-22T12:47:50.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SPTheoNPP.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\SPTheoNPP.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\SPTheoNPP.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\SPTheoNPP.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\SPTheoNPP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T10:03:55.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SPTheoloai.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\SPTheoloai.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\SPTheoloai.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\SPTheoloai.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\SPTheoloai.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T10:03:07.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Nhaphanphoi.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\Nhaphanphoi.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\Nhaphanphoi.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\Nhaphanphoi.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\Nhaphanphoi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T10:02:12.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoaiXe.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\LoaiXe.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\LoaiXe.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\LoaiXe.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\LoaiXe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T09:57:23.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\About.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\About.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\About.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\About.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T09:57:12.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\Details.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\Details.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\Details.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T09:57:07.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Motorcycle.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Models\\Motorcycle.edmx",
+              "RelativeDocumentMoniker": "MotorCycle_\\Models\\Motorcycle.edmx",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Models\\Motorcycle.edmx [Diagram1]",
+              "RelativeToolTip": "MotorCycle_\\Models\\Motorcycle.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-22T09:20:43.787Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\Index.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\MotorCycle\\Index.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\MotorCycle\\Index.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\MotorCycle\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T07:23:56.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MotorCycleController.cs",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Controllers\\MotorCycleController.cs",
+              "RelativeDocumentMoniker": "MotorCycle_\\Controllers\\MotorCycleController.cs",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Controllers\\MotorCycleController.cs",
+              "RelativeToolTip": "MotorCycle_\\Controllers\\MotorCycleController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:22:23.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LayoutUser.cshtml",
+              "DocumentMoniker": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "MotorCycle_\\Views\\Shared\\_LayoutUser.cshtml",
+              "ToolTip": "D:\\MyDoc\\LTWeb\\MotorCycle_\\MotorCycle_\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeToolTip": "MotorCycle_\\Views\\Shared\\_LayoutUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T07:16:36.137Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
