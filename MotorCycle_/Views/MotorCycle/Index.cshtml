@@ -1,4 +1,6 @@
-﻿
+﻿﻿@using MotorCycle_.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<XEGANMAY>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
@@ -45,3 +47,51 @@
         </div>
     </div>
 </div>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount;
+
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+    }
+
+        .MenuTrang li {
+            margin: 0 5px;
+        }
+
+        .MenuTrang a {
+            display: block;
+            padding: 8px 16px;
+            border: 1px solid #248958; /* Color matching hover effect */
+            border-radius: 4px;
+            text-decoration: none;
+            color: #248958;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            .MenuTrang a:hover,
+            .MenuTrang a:focus {
+                background-color: #248958;
+                color: #ffffff;
+            }
+
+        .MenuTrang .active a {
+            background-color: #248958;
+            color: #ffffff;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .MenuTrang a.disabled {
+            color: #cccccc;
+            border-color: #cccccc;
+            pointer-events: none;
+        }
+</style>

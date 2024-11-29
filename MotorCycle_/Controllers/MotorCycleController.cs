@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MotorCycle_.Models;
+using PagedList;
 
 namespace MotorCycle_.Controllers
 {
@@ -17,10 +18,15 @@ namespace MotorCycle_.Controllers
         {
             return data.XEGANMAYs.OrderByDescending(a => a.Ngaycapnhat).Take(count).ToList();
         }
-        public ActionResult Index()
+
+        public ActionResult Index(int ? page)
         {
+            int pageSize = 5;
+            //tạo biến số trang
+            int pageNum = (page ?? 1);
+
             var xemoi = Layxemoi(5);
-            return View(xemoi);
+            return View(xemoi.ToPagedList(pageNum, pageSize));
         }
 
 

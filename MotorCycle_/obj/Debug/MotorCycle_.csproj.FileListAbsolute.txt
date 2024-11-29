@@ -72,3 +72,7 @@ D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\obj\Debug\MotorCycle_.dll
 D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\obj\Debug\MotorCycle_.pdb
 D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\bin\EntityFramework.dll
 D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\bin\EntityFramework.xml
+D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\bin\PagedList.dll
+D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\bin\PagedList.Mvc.dll
+D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\bin\PagedList.xml
+D:\MyDoc\LTWeb\MotorCycle_\MotorCycle_\bin\PagedList.Mvc.xml
