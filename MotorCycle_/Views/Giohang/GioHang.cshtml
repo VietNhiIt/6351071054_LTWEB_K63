@@ -1,4 +1,5 @@
-﻿
+﻿﻿@using MotorCycle_.Models
+@model List<Giohang>
 @{
     ViewBag.Title = "GioHang";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
@@ -20,18 +21,18 @@
     @foreach (var item in Model)
     {
         <tr style="text-align: center; font-weight: bold">
-            <td>@item.iMaxe</td>
+            <td>@item.iMaXe</td>
             <td>@item.sTenxe</td>
-            <td><img src="~/images/@item.Anhbia" style="width: 200px" /></td>
-            @using (Html.BeginForm("CapnhatGiohang", "Giohang", new { @id = item.iMaxe }))
+            <td><img src="~/images/@item.sAnhbia" style="width: 200px" /></td>
+            @using (Html.BeginForm("CapnhatGiohang", "Giohang", new { @id = item.iMaXe }))
             {
                 <td>
                     <input type="number" min="1" name="txtSoluong" value="@item.iSoluong" style="background-color: yellow" />
                 </td>
                 <td>@String.Format("{0:0,0}", item.dDongia)</td>
                 <td>@String.Format("{0:0,0}", item.dThanhtien)</td>
-                <td> <a href="@Url.Action("Details", "MotorCycle", new {id = item.iMaxe})"> Chi tiết</a> </td>
-                <td> @Html.ActionLink("Xóa", "Xoagiohang", new { @id = item.iMaxe })</td>
+                <td> <a href="@Url.Action("Details", "MotorCycle", new {id = item.iMaXe})"> Chi tiết</a> </td>
+                <td> @Html.ActionLink("Xóa", "Xoagiohang", new { @id = item.iMaXe })</td>
                 <td> <input type="submit" value="Cập Nhật" /> </td>
             }
             @*<td>@item.iSoluong</td>
@@ -59,6 +60,3 @@
         </td>
     </tr>
 </table>
-
-
-

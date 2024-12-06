@@ -128,15 +128,22 @@
       <DependentUpon>Motorcycle.edmx</DependentUpon>
       <LastGenOutput>Motorcycle.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\GiohangController.cs" />
     <Compile Include="Controllers\MotorCycleController.cs" />
     <Compile Include="Controllers\NguoidungController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ADMIN.cs">
+      <DependentUpon>Motorcycle.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CHITIETDONTHANG.cs">
       <DependentUpon>Motorcycle.tt</DependentUpon>
@@ -202,10 +209,18 @@
     <Content Include="Views\MotorCycle\SPTheoNPP.cshtml" />
     <Content Include="Views\Nguoidung\Dangky.cshtml" />
     <Content Include="Views\Nguoidung\Dangnhap.cshtml" />
-    <Content Include="Views\Giohang\DatHang.cshtml" />
-    <Content Include="Views\Giohang\GioHang.cshtml" />
     <Content Include="Views\Giohang\Giohangpartial.cshtml" />
     <Content Include="Views\Giohang\Xacnhandonhang.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Chitietxe.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Admin\Xe.cshtml" />
+    <Content Include="Views\Admin\Suaxe.cshtml" />
+    <Content Include="Views\Admin\ThemmoiXe.cshtml" />
+    <Content Include="Views\Admin\Xoaxe.cshtml" />
+    <Content Include="Views\Giohang\GioHang.cshtml" />
+    <Content Include="Views\Giohang\DatHang.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -216,7 +231,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="fonts\" />
-    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

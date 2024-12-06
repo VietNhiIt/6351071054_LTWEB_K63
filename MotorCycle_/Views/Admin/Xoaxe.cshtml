@@ -1,0 +1,272 @@
+﻿
+
+
+﻿@model MotorCycle_.Models.XEGANMAY
+
+@{
+    ViewBag.Title = "Xoaxe";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>XÁC NHẬN THÔNG TIN XE CẦN XÓA</h2>
+
+<h3>Bạn quyết định xóa xe này</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã xe:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaXe)
+        </dd>
+
+        <dt>
+            Tên xe:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenXe)
+        </dd>
+
+        <dt>
+            Giá bán:
+        </dt>
+        <dd>
+            @String.Format("{0:0,0}", Model.Giaban)VNĐ
+        </dd>
+
+        <dt>
+            Mô tả:
+        </dt>
+        <dd style="width: 600px; text-align: justify">
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+
+        <dt>
+            Ảnh bìa
+        </dt>
+        <dd>
+            <img src="@Url.Content("~/images/" + Model.Anhbia)" alt="Alternate Text" width="150" />
+        </dd>
+
+        <dt>
+            Ngày cập nhật:
+        </dt>
+        <dd>
+            @String.Format("{0: dd/MM/yyyy}", Model.Ngaycapnhat)
+        </dd>
+
+        <dt>
+            Số lượng tồn:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+
+        <dt>
+            Loại xe:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAIXE.TenLoaiXe)
+        </dd>
+
+        <dt>
+            Nhà phân phối:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NHAPHANPHOI.TenNPP)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="XÓA" class="btn btn-default" /> |
+            @Html.ActionLink("TRỞ VỀ", "xe")
+        </div>
+    }
+</div>
+
+
+
+
+<style>
+    /* Đặt toàn bộ nội dung vào giữa màn hình */
+    div {
+        max-width: 800px;
+        margin: 50px auto; /* Căn giữa ngang, thêm khoảng cách từ trên */
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Tiêu đề */
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    /* Định dạng danh sách */
+    .dl-horizontal dt {
+        font-weight: bold;
+        font-size: 16px;
+        color: #555;
+        padding-right: 10px;
+        text-align: left;
+        width: 180px;
+        float: left;
+        clear: left;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 190px; /* Điều chỉnh theo độ rộng của dt */
+        font-size: 16px;
+        color: #333;
+    }
+
+        /* Canh giữa ảnh bìa */
+        .dl-horizontal dd img {
+            display: block;
+            margin: 10px auto; /* Căn giữa ảnh */
+        }
+
+        /* Mô tả */
+        .dl-horizontal dd[style*="text-align: justify"] {
+            line-height: 1.6;
+            font-size: 15px;
+            color: #444;
+        }
+
+    /* Đường phân cách */
+    hr {
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+    }
+
+    /* Liên kết */
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /* Nút điều chỉnh và trở về */
+    p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        p a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 1px solid #007BFF;
+            background-color: #f8f9fa;
+            color: #007BFF;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+            p a:hover {
+                background-color: #007BFF;
+                color: #fff;
+                border: 1px solid #0056b3;
+            }
+
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    /* Định dạng chung cho danh sách chi tiết */
+    .dl-horizontal dt {
+        font-weight: bold;
+        font-size: 16px;
+        color: #555;
+        padding-right: 10px;
+        text-align: left;
+        width: 180px;
+        float: left;
+        clear: left;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 190px; /* Điều chỉnh theo độ rộng của dt */
+        font-size: 16px;
+        color: #333;
+    }
+
+        /* Canh giữa ảnh bìa */
+        .dl-horizontal dd img {
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Định dạng riêng cho mô tả */
+        .dl-horizontal dd[style*="text-align: justify"] {
+            line-height: 1.6;
+            font-size: 15px;
+            color: #444;
+        }
+
+    /* Đường phân cách */
+    hr {
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+    }
+
+    /* Liên kết */
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    /* Nút trở về và điều chỉnh */
+    p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        p a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 1px solid #007BFF;
+            background-color: #f8f9fa;
+            color: #007BFF;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+            p a:hover {
+                background-color: #007BFF;
+                color: #fff;
+                border: 1px solid #0056b3;
+            }
+</style>

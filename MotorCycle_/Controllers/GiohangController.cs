@@ -131,25 +131,20 @@ namespace MotorCycle_.Controllers
         [HttpGet]
         public ActionResult DatHang()
         {
-            // Kiểm tra nếu người dùng chưa đăng nhập
-            if (Session["Taikhoan"] == null)
+            if (Session["Taikhoan"] == null || Session["Taikhoan"].ToString() == "")
             {
                 return RedirectToAction("Dangnhap", "Nguoidung");
             }
-
-            // Kiểm tra nếu giỏ hàng trống
-            var giohang = Session["Giohang"] as List<Giohang>;
-            if (giohang == null || !giohang.Any())
+            if (Session["Giohang"] == null)
             {
-                return RedirectToAction("GioHang", "Giohang");
+                return RedirectToAction("Index", "MotorCycle");
             }
 
-            // Tính tổng số lượng và tổng tiền
-            ViewBag.Tongsoluong = giohang.Sum(g => g.iSoluong);
-            ViewBag.Tongtien = giohang.Sum(g => g.dThanhtien);
+            List<Giohang> lstGiohang = Laygiohang();
+            ViewBag.Tongsoluong = TongSoLuong();
+            ViewBag.Tongtien = TongTien();
 
-            // Truyền danh sách giỏ hàng vào View
-            return View(giohang);
+            return View(lstGiohang);
         }
 
 
@@ -157,43 +152,26 @@ namespace MotorCycle_.Controllers
         {
             DONDATHANG ddh = new DONDATHANG();
             KHACHHANG kh = (KHACHHANG)Session["Taikhoan"];
-            if (kh == null) return RedirectToAction("Dangnhap", "Nguoidung");
-
             List<Giohang> gh = Laygiohang();
-            if (gh == null || !gh.Any()) return RedirectToAction("Index", "MotorCycle");
-
             ddh.MaKH = kh.MaKH;
             ddh.Ngaydat = DateTime.Now;
-
-            var ngaygiao = collection["Ngaygiao"];
-            if (!DateTime.TryParseExact(ngaygiao, "MM/dd/yyyy",
-                System.Globalization.CultureInfo.InvariantCulture,
-                System.Globalization.DateTimeStyles.None,
-                out DateTime parsedNgayGiao))
-            {
-                ModelState.AddModelError("", "Ngày giao không hợp lệ. Vui lòng nhập đúng định dạng MM/dd/yyyy.");
-                return View();
-            }
-            ddh.Ngaygiao = parsedNgayGiao;
+            var ngaygiao = String.Format("{0:MM/dd/yyyy}", collection["Ngaygiao"]);
+            ddh.Ngaygiao = DateTime.Parse(ngaygiao);
             ddh.Tinhtranggiaohang = false;
             ddh.Dathanhtoan = false;
-
             data.DONDATHANGs.Add(ddh);
             data.SaveChanges();
 
             foreach (var item in gh)
             {
-                CHITIETDONTHANG ctdh = new CHITIETDONTHANG
-                {
-                    MaDonHang = ddh.MaDonHang,
-                    MaXe = item.iMaXe,
-                    Soluong = item.iSoluong,
-                    Dongia = (decimal)item.dDongia
-                };
+                CHITIETDONTHANG ctdh = new CHITIETDONTHANG();
+                ctdh.MaDonHang = ddh.MaDonHang;
+                ctdh.MaXe = item.iMaXe;
+                ctdh.Soluong = item.iSoluong;
+                ctdh.Dongia = (decimal)item.dDongia;
                 data.CHITIETDONTHANGs.Add(ctdh);
             }
             data.SaveChanges();
-
             Session["Giohang"] = null;
             return RedirectToAction("Xacnhandonhang", "Giohang");
         }

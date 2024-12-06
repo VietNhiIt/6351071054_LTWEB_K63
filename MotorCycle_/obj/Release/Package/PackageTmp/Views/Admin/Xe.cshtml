@@ -1,0 +1,244 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    ﻿@using MotorCycle_.Models
+    @using PagedList.Mvc;
+    @model PagedList.IPagedList<MotorCycle_.Models.XEGANMAY>
+
+    @helper Truncate(string input, int length)
+    {
+        if (input.Length < length)
+        {
+            @input
+        }
+        else
+        {
+            @input.Substring(0, length) <text>...</text>
+        }
+    }
+
+    @{
+        ViewBag.Title = "Xe";
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+
+    <h2>QUẢN LÝ THÔNG TIN XE</h2>
+
+    <p>
+        @Html.ActionLink("Thêm mới sản phẩm", "ThemmoiXe")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().MaXe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TenXe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Giaban)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Mota)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Anhbia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Ngaycapnhat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Soluongton)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().MaLX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().MaNPP)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaXe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenXe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Giaban)
+                </td>
+                <td>
+                    @Truncate(item.Mota, 100);
+                </td>
+                <td>
+                    <img src="@Url.Content("~/images/" + item.Anhbia)" width="120" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ngaycapnhat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Soluongton)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LOAIXE.TenLoaiXe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NHAPHANPHOI.TenNPP)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Suaxe", new { id = item.MaXe }) |
+                    @Html.ActionLink("Chi tiết", "Chitietxe", new { id = item.MaXe }) |
+                    @Html.ActionLink("Xóa", "Xoaxe", new { id = item.MaXe })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount;
+
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("Xe", new { page = page }))
+    </div>
+
+    <style>
+        .MenuTrang {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+            .MenuTrang .pagination {
+                display: flex;
+                list-style: none; /* Bỏ chấm đầu mục */
+                padding: 0;
+                margin: 0;
+            }
+
+                .MenuTrang .pagination li {
+                    margin: 0 5px;
+                }
+
+                .MenuTrang .pagination a {
+                    display: block;
+                    padding: 8px 16px;
+                    border: 1px solid #248958; /* Color matching hover effect */
+                    border-radius: 4px;
+                    text-decoration: none;
+                    color: #248958;
+                    font-weight: bold;
+                    transition: background-color 0.3s, color 0.3s;
+                }
+
+                    .MenuTrang .pagination a:hover,
+                    .MenuTrang .pagination a:focus {
+                        background-color: #248958;
+                        color: #ffffff;
+                    }
+
+                .MenuTrang .pagination .active a {
+                    background-color: #248958;
+                    color: #ffffff;
+                    cursor: default;
+                    pointer-events: none;
+                }
+
+                .MenuTrang .pagination a.disabled {
+                    color: #cccccc;
+                    border-color: #cccccc;
+                    pointer-events: none;
+                }
+
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .table th, .table td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: center;
+            }
+
+            .table th {
+                background-color: #343a40;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            .table tr:hover {
+                background-color: #e9ecef;
+                cursor: pointer;
+            }
+
+            .table td {
+                color: #343a40;
+            }
+
+            .table .action-links a {
+                margin: 0 5px;
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                .table .action-links a:hover {
+                    color: #0056b3;
+                    text-decoration: underline;
+                }
+
+        h2 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            p a {
+                background-color: #28a745;
+                color: #fff;
+                padding: 8px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+
+                p a:hover {
+                    background-color: #218838;
+                }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>Xe</title>
+</head>
+<body>
+    <div> 
+    </div>
+</body>
+</html>

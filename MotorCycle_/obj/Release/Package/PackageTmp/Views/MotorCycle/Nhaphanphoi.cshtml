@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MotorCycle_.Models.NHAPHANPHOI>
+
+<p class="lead"> NHA PHAN PHOI</p>
+
+<div class="list-group">
+    @foreach (var item in Model)
+            {
+                <a href="@Url.Action("SPTheoNPP", "MotorCycle", new {id = item.MaNPP})">
+                    @item.TenNPP
+                </a>
+            }
+</div>

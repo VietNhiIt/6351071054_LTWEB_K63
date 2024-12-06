@@ -50,17 +50,33 @@ namespace MotorCycle_.Controllers
             return View(xe.Single());
         }
 
-        public ActionResult SPTheoloai(int id)
+        public ActionResult SPTheoloai(int id, int? page)
         {
-            var xe = from x in data.XEGANMAYs where x.MaLX == id select x;
-            return View(xe);
+            ViewBag.MaLX = id;
+            int pageSize = 3;
+            int pageNum = (page ?? 1);
+
+            var xe = (from x in data.XEGANMAYs
+                        where x.MaLX == id
+                        select x).ToList();
+
+            return View(xe.ToPagedList(pageNum, pageSize));
         }
 
-        public ActionResult SPTheoNPP(int id)
+        public ActionResult SPTheoNPP(int id, int? page)
         {
-            var xe = from x in data.XEGANMAYs where x.MaNPP == id select x;
-            return View(xe);
+            ViewBag.MaLX = id;
+            int pageSize = 3;
+            int pageNum = (page ?? 1);
+
+            var xe = from x in data.XEGANMAYs
+                       where x.MaNPP == id
+                       orderby x.MaXe // or another property to order by
+                       select x;
+
+            return View(xe.ToPagedList(pageNum, pageSize));
         }
+
 
         public ActionResult About()
         {
